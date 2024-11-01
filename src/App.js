@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import TweetList from './components/TweetList';
+import TweetForm from './components/TweetForm';
 
 function App() {
+  const [tweets, setTweets] = useState([
+    { content: '20', isEmbedded: true }, // Tweet de Elon Musk
+    { content: '440322224407314432', isEmbedded: true }, // Otro tweet famoso
+  ]);
+
+  const addTweet = (content, isEmbedded) => {
+    const newTweet = {
+      content,
+      isEmbedded,
+      username: isEmbedded ? '' : 'usuario_demo',
+      date: isEmbedded ? '' : new Date(),
+    };
+    setTweets([newTweet, ...tweets]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.appContainer}>
+      <h1 style={styles.header}>Twitter Clone</h1>
+      <TweetForm addTweet={addTweet} />
+      <TweetList tweets={tweets} />
     </div>
   );
 }
+
+const styles = {
+  appContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#15202B',
+    color: '#fff',
+    minHeight: '100vh',
+    paddingTop: '20px',
+  },
+  header: {
+    fontSize: '32px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    color: '#1DA1F2',
+  },
+};
 
 export default App;
