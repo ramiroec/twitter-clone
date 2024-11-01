@@ -1,70 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Twitter Clone
 
-## Available Scripts
+![Twitter Clone](https://img.shields.io/badge/Twitter-Clone-blue?style=for-the-badge&logo=twitter)
 
-In the project directory, you can run:
+Un clon simple de Twitter creado con React, que permite publicar tweets personalizados y mostrar tweets famosos embebidos con `react-tweet`. Diseñado con un estilo oscuro y una interfaz limpia y minimalista.
 
-### `npm start`
+## Descripción
+Este proyecto de clon de Twitter fue creado por **Ramiro Estigarribia Canese**, profesor de Full Stack y desarrollador apasionado. La aplicación permite a los usuarios:
+- Escribir y publicar tweets personalizados.
+- Insertar tweets reales desde Twitter mediante `react-tweet`.
+- Disfrutar de una interfaz amigable, con un diseño oscuro y simple.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interfaz de usuario moderna:** Basada en el tema oscuro de Twitter con elementos grandes y simples.
+- **Tweets embebidos:** Capacidad de agregar tweets reales mediante sus IDs con la biblioteca `react-tweet`.
+- **Publicación de tweets personalizados:** Los usuarios pueden escribir sus propios tweets en texto.
 
-### `npm test`
+## Capturas de pantalla
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*Aquí podrías agregar algunas capturas de pantalla para mostrar la interfaz de la aplicación.*
 
-### `npm run build`
+## Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** - Para la construcción de la interfaz de usuario.
+- **react-tweet** - Para incrustar tweets reales de Twitter.
+- **CSS** - Para estilizar la aplicación con un tema oscuro y minimalista.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/ramiroec/twitter-clone.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd twitter-clone
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+   
+## Uso
 
-### `npm run eject`
+1. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
+2. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Cómo agregar un tweet embebido
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para agregar un tweet embebido, usa la opción de checkbox en el formulario de tweets y pega el ID de un tweet famoso. El ID de un tweet se encuentra en la URL, por ejemplo, para el tweet en:
+```
+https://twitter.com/user/status/1359830688162603010
+```
+El ID es `1359830688162603010`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribución
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Si deseas contribuir, ¡será bienvenido! Por favor, sigue estos pasos:
 
-## Learn More
+1. Haz un fork de este repositorio.
+2. Crea una rama con tu característica (`git checkout -b feature/nueva-caracteristica`).
+3. Haz commit de tus cambios (`git commit -m 'Añadir nueva característica'`).
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
+5. Abre un Pull Request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Ramiro Estigarribia Canese**  
+Profesor de Full Stack y desarrollador feliz.
 
-### Code Splitting
+- GitHub: [@ramiroec](https://github.com/ramiroec)
+- LinkedIn: [Ramiro Estigarribia Canese](https://www.linkedin.com/in/ramiroec)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licencia
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y mejorarlo!
