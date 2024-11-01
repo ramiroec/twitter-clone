@@ -5,8 +5,7 @@ import TweetForm from './components/TweetForm';
 
 function App() {
   const [tweets, setTweets] = useState([
-    { content: '20', isEmbedded: true }, // Tweet de Elon Musk
-    { content: '440322224407314432', isEmbedded: true }, // Otro tweet famoso
+    { content: '1852064677536432269', isEmbedded: true }, 
   ]);
 
   const addTweet = (content, isEmbedded) => {
