@@ -13,6 +13,11 @@ const TweetForm = ({ addTweet }) => {
     setIsEmbedded(false);
   };
 
+  const handleTweetOnTwitter = () => {
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(content)}`;
+    window.open(tweetUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <form onSubmit={handleSubmit} style={styles.formContainer}>
       <textarea
@@ -29,7 +34,15 @@ const TweetForm = ({ addTweet }) => {
         />
         Incrustar como Tweet de Twitter
       </label>
-      <button type="submit" style={styles.button}>Tweet</button>
+      <button type="submit" style={styles.button}>Agregar al Feed</button>
+      <button
+        type="button"
+        onClick={handleTweetOnTwitter}
+        style={{ ...styles.button, backgroundColor: '#1DA1F2', marginTop: '10px' }}
+        disabled={!content}
+      >
+        Publicar en Twitter
+      </button>
     </form>
   );
 };
@@ -59,7 +72,7 @@ const styles = {
   button: {
     padding: '12px',
     fontSize: '16px',
-    backgroundColor: '#1DA1F2',
+    backgroundColor: '#333',
     color: 'white',
     border: 'none',
     borderRadius: '5px',
